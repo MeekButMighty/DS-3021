@@ -30,8 +30,8 @@ winequality = pd.read_csv("https://raw.githubusercontent.com/UVADS/DS-3001/main/
 # n = number of features
 # m = number of samples
 
-n_features = X.shape[1]
-n_samples = X.shape[0]
+n_features = winequality.shape[1]
+n_samples = winequality.shape[0]
 
 # Assuming log base 2 for the logarithmic term
 big_o_complexity = n_features * n_samples * np.log2(n_samples)

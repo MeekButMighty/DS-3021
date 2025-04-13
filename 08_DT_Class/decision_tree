@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<PARENT &le; 0.5<br/>gini = 0.495<br/>samples = 121397<br/>value = [66462, 54935]>, fillcolor="#fae9dd"] ;
+1 [label=<WSAL_VAL &le; 46833.0<br/>gini = 0.478<br/>samples = 90863<br/>value = [36009, 54854]>, fillcolor="#bbddf6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<PENATVTY &le; 302.0<br/>gini = 0.499<br/>samples = 63262<br/>value = [30554.0, 32708.0]>, fillcolor="#f2f9fd"] ;
+1 -> 2 ;
+3 [label=<gini = 0.495<br/>samples = 55326<br/>value = [24994.0, 30332.0]>, fillcolor="#dceefa"] ;
+2 -> 3 ;
+4 [label=<gini = 0.42<br/>samples = 7936<br/>value = [5560, 2376]>, fillcolor="#f0b78e"] ;
+2 -> 4 ;
+5 [label=<WSAL_VAL &le; 75500.0<br/>gini = 0.317<br/>samples = 27601<br/>value = [5455, 22146]>, fillcolor="#6ab5eb"] ;
+1 -> 5 ;
+6 [label=<gini = 0.403<br/>samples = 13738<br/>value = [3837, 9901]>, fillcolor="#86c3ef"] ;
+5 -> 6 ;
+7 [label=<gini = 0.206<br/>samples = 13863<br/>value = [1618, 12245]>, fillcolor="#53aae8"] ;
+5 -> 7 ;
+8 [label=<WSAL_VAL &le; 22500.0<br/>gini = 0.005<br/>samples = 30534<br/>value = [30453, 81]>, fillcolor="#e5813a"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<WSAL_VAL &le; 1474.5<br/>gini = 0.004<br/>samples = 30437<br/>value = [30376, 61]>, fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label=<gini = 0.002<br/>samples = 29646<br/>value = [29609, 37]>, fillcolor="#e58139"] ;
+9 -> 10 ;
+11 [label=<gini = 0.059<br/>samples = 791<br/>value = [767, 24]>, fillcolor="#e6853f"] ;
+9 -> 11 ;
+12 [label=<PRDTRACE &le; 2.5<br/>gini = 0.327<br/>samples = 97<br/>value = [77, 20]>, fillcolor="#eca26c"] ;
+8 -> 12 ;
+13 [label=<gini = 0.273<br/>samples = 86<br/>value = [72.0, 14.0]>, fillcolor="#ea9a5f"] ;
+12 -> 13 ;
+14 [label=<gini = 0.496<br/>samples = 11<br/>value = [5, 6]>, fillcolor="#deeffb"] ;
+12 -> 14 ;
+}
