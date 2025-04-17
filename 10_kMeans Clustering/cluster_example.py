@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix
 import os
 os.listdir()
 #print(os.getcwd())
-os.chdir('c:\\Users\\Brian Wright\\Documents\\3001Python\\DS-3001')
+os.chdir('/workspaces/DS-3021')
 #%%
 # Load Data
 house_votes_Dem = pd.read_csv("data/house_votes_Dem.csv", encoding='latin')
